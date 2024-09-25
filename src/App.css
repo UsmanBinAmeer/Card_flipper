@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.container1,
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    margin-top: 90px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    border-radius: 8px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    color: white;
+    height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.box1 {
+    background-color: #FF5733;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box2 {
+    background-color: #33FF57;
 }
 
-.App-link {
-  color: #61dafb;
+.box3 {
+    background-color: #3357FF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box4 {
+    background-color: #F1C40F;
+}
+
+.box5 {
+    background-color: #8E44AD;
+}
+
+.box6 {
+    background-color: #E67E22;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
+p {
+    margin-top: 60px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6 {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6 {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
